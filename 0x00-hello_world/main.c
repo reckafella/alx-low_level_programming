@@ -5,5 +5,5 @@
 int main(void)
 {
   printf("Hello, World!\n");
-  printf("Happy to be here? Yes, happy to be here!\n")
+  printf("Happy to be here? Yes, happy to be here!\n");
 }
