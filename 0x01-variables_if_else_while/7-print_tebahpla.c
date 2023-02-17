@@ -9,11 +9,12 @@
 int main(void)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	int i = 25;
 
-	for (i = 26; i >= 0; i--)
+	while (i >= 0)
 	{
 		putchar(str[i]);
+		i--;
 	}
 	putchar('\n');
 
