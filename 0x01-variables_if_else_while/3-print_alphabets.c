@@ -17,7 +17,7 @@ int main(void)
 	{
 		putchar(str[i]);
 	}
-	
+
 	while (j < 26)
 	{
 		putchar(upp[j]);
