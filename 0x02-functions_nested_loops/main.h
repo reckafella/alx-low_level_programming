@@ -2,5 +2,5 @@
  * Declaration of function prototypes
  */
 
-int _putchar(char c);
+#include "main.c"
 void print_alphabet(void);
