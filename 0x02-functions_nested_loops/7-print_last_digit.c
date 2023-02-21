@@ -4,11 +4,10 @@
  * print_last_digit - print last digit of an integer value
  * @n: value passed to the function
  *
- * Return: 
+ * Return: last digit of an integer
  */
 
 int print_last_digit(int n)
 {
-	int last_digit = (n % 10);
-	return (last_digit);
+	return (n % 10);
 }
