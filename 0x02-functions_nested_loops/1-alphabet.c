@@ -36,9 +36,9 @@ int _putchar(char c)
 void print_alphabet(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	int i;
 
-	for (i; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		_putchar(alphabet[i]);
 	}
