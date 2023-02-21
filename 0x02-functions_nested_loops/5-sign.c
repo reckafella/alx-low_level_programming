@@ -11,24 +11,21 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(45);
-		_putchar(44);
-		_putchar(32);
-		_putchar('\n');
+		char *nm1 = "+, 1";
+		write(1, nm1, 4);
 		return (1);
 	}
 	else if (n < 0)
 	{
-		_putchar(45);
-		_putchar(44);
-		_putchar(32);
-		_putchar('\n');
+		char *nl1 = "-, /";
+		write(1, nl1, 4);
 		return (-1);
 	}
 	else
 	{
-		_putchar(48);
-		_putchar('\n');
+		char *ne0 = "0, 0";
+		write(1, ne0, 4);
 		return (0);
 	}
+	_putchar('\n');
 }
