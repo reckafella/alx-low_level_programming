@@ -7,7 +7,7 @@
 
 void print_alphabet_x10(void)
 {
-	char *alphabet = "abcdefghijklmnopqrstuvwxyz"
+	char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 	int j;
 
