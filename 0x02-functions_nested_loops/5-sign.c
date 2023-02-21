@@ -12,20 +12,19 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		char *nm1 = "+, 1";
-		write(1, nm1, 4);
+		char *nm1 = "+, ";
+		write(1, nm1, 3);
 		return (1);
 	}
 	else if (n < 0)
 	{
 		char *nl1 = "-, /";
 		write(1, nl1, 4);
-		return (-1);
 	}
 	else
 	{
-		char *ne0 = "0, 0";
-		write(1, ne0, 4);
+		char *ne0 = "0, ";
+		write(1, ne0, 3);
 		return (0);
 	}
 	_putchar('\n');
