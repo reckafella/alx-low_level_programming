@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * _islower(int c) - check whether a letter is lowercase or not
- * return: 1 if true, 0 otherwise
+ * _islower - check whether a letter is lowercase or not
+ * @c: letter passed to the _islower function
+ *
+ * Return: 1 if lowercase. 0 otherwise.
  */
 
 int _islower(int c)
