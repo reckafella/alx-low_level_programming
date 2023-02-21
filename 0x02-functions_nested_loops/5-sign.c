@@ -13,18 +13,21 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		char *nm1 = "+";
+
 		write(1, nm1, 1);
 		return (1);
 	}
 	else if (n < 0)
 	{
 		char *nl1 = "-";
+
 		write(1, nl1, 1);
 		return (-1);
 	}
 	else
 	{
 		char *ne0 = "0";
+
 		write(1, ne0, 1);
 		return (0);
 	}
