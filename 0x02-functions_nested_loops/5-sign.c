@@ -18,8 +18,9 @@ int print_sign(int n)
 	}
 	else if (n < 0)
 	{
-		char *nl1 = "-, /";
-		write(1, nl1, 4);
+		char *nl1 = "-, ";
+		write(1, nl1, 3);
+		return (-1);
 	}
 	else
 	{
