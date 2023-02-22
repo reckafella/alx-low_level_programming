@@ -10,19 +10,13 @@
 
 int print_last_digit(int n)
 {
-	char lst_ch;
+	int lst = (n % 10);
 
-	int last_digit = (n % 10);
-	
 	if (n < 0)
-        {
-                n *= -1;
-        }
+	{
+		lst = lst * -1;
+	}
 
-	lst_ch = last_digit + '0';
-
-
-
-	write(1, &lst_ch, 1);
+	_putchar(lst + '0');
 	return (last_digit);
 }
