@@ -1,3 +1,4 @@
+#include <limits.h>
 /**
  * Declaration of function prototypes
  */
