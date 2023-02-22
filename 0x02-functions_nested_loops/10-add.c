@@ -11,9 +11,7 @@
 
 int add(int x, int y)
 {
-	int sum = (x + y);
-
-	printf("%d", sum);
+	printf("%d", x + y);
 
 	return (0);
 }
