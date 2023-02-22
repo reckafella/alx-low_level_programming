@@ -17,10 +17,6 @@ int print_last_digit(int n)
 	{
 		n = -n;
 	}
-	if (n == INT_MIN)
-	{
-		n = -1 * (n +1);
-	}
 
 	last_digit = (n % 10);
 	lst_ch = last_digit + '0';
