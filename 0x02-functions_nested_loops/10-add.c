@@ -14,4 +14,6 @@ int add(int x, int y)
 	int sum = (x + y);
 
 	printf("%d", sum);
+
+	return (0);
 }
