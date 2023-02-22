@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -9,6 +10,14 @@
 
 int print_last_digit(int n)
 {
-	int lst = (n % 10);
-	return (lst);
+	if (n < 0)
+	{
+		n = -n;
+	}
+	
+	int last_digit = (n % 10);
+	char lst_ch = last_digit + '0';
+
+	write(1, &lst_ch, 1);
+	return last_digit;
 }
