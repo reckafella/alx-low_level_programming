@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,8 +9,6 @@
  */
 
 int add(int x, int y)
-{
-	printf("%d", x + y);
-
-	return (0);
+{	
+	return (x + y);
 }
