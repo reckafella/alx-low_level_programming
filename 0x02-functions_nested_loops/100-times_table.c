@@ -18,13 +18,7 @@ void print_times_table(int n)
 	int second;
 	int last;
 
-	if (n < 0 || n > 15)
-	{
-		char *message = "Sorry, n must be >= 0 or < 15";
-		write(1, message, strlen(message));
-		_putchar('\n');
-	}
-	else
+	if (n >= 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -56,17 +50,17 @@ void print_times_table(int n)
 				else
 				{
 					first = (product / 100);
-                                        second = ((product / 10) % 10);
+					second = ((product / 10) % 10);
 					third = (product % 10);
-					
+
 					_putchar(' ');
 					_putchar(first + '0');
-                                        _putchar(second + '0');
+					_putchar(second + '0');
 					_putchar(third + '0');
 
 				}
 
-				if ( j >= 0 && j < n)
+				if (j >= 0 && j < n)
 				{
 					_putchar(',');
 				}
