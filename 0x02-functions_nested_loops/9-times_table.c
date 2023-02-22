@@ -10,12 +10,31 @@ void times_table(void)
 {
 	int j = 0;
 	int i = 0;
+	int product;
+	int first;
+	int last;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			printf("%d", (i * j));
+			product = (i * j);
+
+			if (product < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(product + '0');
+			}
+			else
+			{
+				first = (product / 10);
+				last = (product % 10);
+
+				_putchar(' ');
+				_putchar(first + '0');
+				_putchar(last + '0');
+			}
 
 			if (j != 9)
 			{
