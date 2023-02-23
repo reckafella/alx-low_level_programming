@@ -11,7 +11,8 @@
 
 void print_one_row(int row, int n)
 {
-	for (int j = 0; j <= n; j++)
+	int j;
+	for (j = 0; j <= n; j++)
 	{
 		product = (i * j);
 
@@ -57,9 +58,11 @@ void print_one_row(int row, int n)
 
 void print_times_table(int n)
 {
+	int i;
+	int j;
 	if (n >= 0 && n <= 15)
 	{
-		for (int i = 0; i <= n; i++)
+		for (i = 0; i <= n; i++)
 		{
 			print_one_row(i, n);
 		}
