@@ -9,6 +9,7 @@
 int main(void)
 {
 	fibonacci_series(50);
+	printf("\n");
 
 	return (0);
 }
