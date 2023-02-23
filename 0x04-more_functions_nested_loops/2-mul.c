@@ -5,8 +5,8 @@
  *@a: first operand
  *@b: second operand
  *
- * return: 0
- */
+ * Return: 0 if successful
+*/
 
 
 int mul(int a, int b)
