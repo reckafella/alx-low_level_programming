@@ -4,14 +4,15 @@
 
 /**
 * print_one_row - print a single row
-* @row: row being printed
+* @i: row being printed
 * @n: parameter
 * Return: 0
 */
 
-void print_one_row(int row, int n)
+void print_one_row(int i, int n)
 {
 	int j;
+	int product;
 
 	for (j = 0; j <= n; j++)
 	{
