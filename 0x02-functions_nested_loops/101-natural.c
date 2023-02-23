@@ -10,7 +10,7 @@
 int main(void)
 {
 	sum_of_natural_numbers(1024);
-
+	return (0);
 }
 
 
@@ -31,6 +31,10 @@ void sum_of_natural_numbers(int n)
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum = sum + i;
+		}
+		else
+		{
+			continue;
 		}
 	}
 	printf("%d\n", sum);
