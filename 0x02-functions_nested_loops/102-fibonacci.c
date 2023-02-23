@@ -46,7 +46,7 @@ void  fibonacci_series(int n)
 
 		printf("%ld", next);
 
-		if (i < (n - 1))
+		if (i < (n))
 		{
 			printf(", ");
 		}
