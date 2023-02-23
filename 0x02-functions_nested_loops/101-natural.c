@@ -1,6 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 
+
+/**
+ * main - entry point
+ * Return: 0
+*/
+
+int main(void)
+{
+	sum_of_natural_numbers(1024);
+
+}
+
+
 /**
  * sum_of_natural_numbers - print sum of all natural numbers below 1024
  * @n: upper limit (1024)
