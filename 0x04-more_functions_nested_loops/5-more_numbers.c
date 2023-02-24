@@ -2,17 +2,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- * Return: 0
- */
-int main(void)
-{
-	more_numbers();
-
-	return (0);
-}
-
-/**
  * _putchar - print a single character
  * @c: character to print
  *
