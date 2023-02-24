@@ -13,10 +13,10 @@ void print_square(int size)
 	int column;
 
 	if (size <= 0)
-    {
+	{
 		_putchar('\n');
-    }
-    else
+	}
+	else
 	{
 		for (row = 0; row < size; row++)
 		{
