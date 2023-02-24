@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -8,16 +9,24 @@
 
 void more_numbers(void)
 {
-	char *nums = "1234567891011121314";
 	int i;
 	int j;
+	char *nl = "\n";
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 19; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(nums[j]);
+			if (j > 9)
+			{
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
+			}
+			else
+			{
+				_putchar(j + '0');
+			}
+			write(1, nl, 1);
 		}
-		_putchar('\n');
 	}
 }
