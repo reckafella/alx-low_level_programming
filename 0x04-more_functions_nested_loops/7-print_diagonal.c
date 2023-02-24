@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_line - print a straight line in the terminal
+ * print_diagonal - print a diagonal line in the terminal
  * @n: line length
  *
  * Return: 0
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
