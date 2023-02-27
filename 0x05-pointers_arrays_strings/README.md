@@ -12,3 +12,6 @@
 4. 3-puts.c -- a function that prints a string, followed by a new line, to stdout.
 
  - Prototype: void _puts(char *str);
+
+5. 4-print_rev.c -- a function that prints a string, in reverse, followed by a new line to the stdout.
+ - Prototype: void print_rev(char *s);
