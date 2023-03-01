@@ -16,6 +16,15 @@
 5. 4-print_rev.c -- a function that prints a string, in reverse, followed by a new line to the stdout.
  - Prototype: void print_rev(char *s);
 
+6. 6-puts2.c -- a function that prints every other character of a string, starting with the first character, followed by a new line.
+
+ - Prototype: void puts2(char *str);
+
+7. 7-puts_half.c -- a function that prints half of a string, followed by a new line.
+
+ - Prototype: void puts_half(char *str);
+ - The function should print the second half of the string
+ - If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
 
 8. a function that prints n elements of an array of integers, followed by a new line.
  - Prototype: void print_array(int *a, int n);
