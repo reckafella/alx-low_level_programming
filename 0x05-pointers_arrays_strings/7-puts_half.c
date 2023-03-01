@@ -13,7 +13,7 @@ void puts_half(char *str)
 	int n;
 
 	/* determine the length of the string */
-	while (s[length] != '\0')
+	while (str[length] != '\0')
 	{
 		length++;
 	}
@@ -30,7 +30,7 @@ void puts_half(char *str)
 
 	for (; n < (length - 1); n++)
 	{
-		_putchar(s[n]);
+		_putchar(str[n]);
 	}
 	_putchar('\n');
 }
