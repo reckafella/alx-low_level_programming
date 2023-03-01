@@ -11,15 +11,17 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int tmp_char;
+        int tmp_char;
 
-	n--; /* decrement n given that index starts at 0.*/
+        n--; /* decrement n given that index starts at 0.*/
 
-	for (i = 0; i < n; i++ && n--)
-	{
-		tmp_char = a[i];
-		a[i] = a[n];
-		a[n] = tmp_char;
+        while (i <= n)
+        {
+                tmp_char = a[i];
+                a[i] = a[n];
+                a[n] = tmp_char;
+                i++;
+                n--;
+        }
 
-	}
 }
