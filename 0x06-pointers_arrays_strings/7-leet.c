@@ -12,7 +12,7 @@ char *leet(char *s)
 	int i;
 	char *tmp = s;
 
-	for (i = 0; s[i] != '\0'; i++;)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == 'a' || s[i] == 'A')
 		{
