@@ -17,13 +17,8 @@ void print_number(int n)
 
 	if (n == 0)
 	{
-		_putchar(n + '0');
+		_putchar(n);
 	}
-	/**
-	 * When number has two or more digits,
-	 * pass it through the function recursively
-	 * till we get a single digit value
-	 */
 
 	if ((n / 10))
 	{
