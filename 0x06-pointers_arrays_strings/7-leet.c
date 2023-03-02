@@ -39,4 +39,5 @@ char *leet(char *s)
 			continue;
 		}
 	}
+	return (tmp);
 }
