@@ -12,8 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 	unsigned int j;
-	unsigned int sublen;
-	sublen = 0;
+	unsigned int sublen = 0;
 
 	for (i = 0; i < _strlen(s); i++)
 	{
@@ -25,6 +24,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
+
+	return (sublen);
 }
 /**
  * _strlen - returns the string length
@@ -35,14 +36,13 @@ unsigned int _strspn(char *s, char *accept)
 
 unsigned int _strlen(char *str)
 {
-	unsigned int len;
-	len = 0;
+	unsigned int len = 0;
 
-        /* Get string length */
-        while (str[len] != '\0')
-        {
-                len++;
-        }
+	/* Get string length */
+	while (str[len] != '\0')
+	{
+		len++;
+	}
 
 	return (len);
 }
