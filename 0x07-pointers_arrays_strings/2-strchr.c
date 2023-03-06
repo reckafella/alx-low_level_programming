@@ -18,6 +18,8 @@ char *_strchr(char *s, char c)
 		length++;
 	}
 
+	length--;
+
 	/*
 	 * loop through the string s.
 	 * if s[i] equals first occurrence of char c,
