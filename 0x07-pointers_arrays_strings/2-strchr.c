@@ -25,7 +25,7 @@ char *_strchr(char *s, char c)
 	 * else, return NULL if char not found.
 	 */
 
-	for (i = 0; i < (length); i++)
+	for (i = 0; i < (length - 1); i++)
 	{
 		if (s[i] == c)
 		{
