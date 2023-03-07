@@ -35,9 +35,9 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int haystack_len = _strlen(haystack);
 	unsigned int needle_len = _strlen(needle);
 
-	for (i = 0; i < haystack_len && haystack[i] != '\0'; i++)
+	for (i = 0; i < haystack_len; i++)
 	{
-		for (j = 0; j < needle_len && needle[j] != '\0'; j++)
+		for (j = 0; j < needle_len; j++)
 		{
 			if (haystack[i] == needle[j])
 			{
