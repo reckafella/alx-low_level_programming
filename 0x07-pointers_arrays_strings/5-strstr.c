@@ -19,6 +19,28 @@ unsigned int _strlen(char *str)
 
 	return (len);
 }
+/**
+ * compare_strings - check if two strings are similar
+ * @str1: pointer to first string
+ * @str2: pointer to second string
+ *
+ * Return: true
+ */
+
+int compare_strings(char *s1, char *s2)
+{
+	while (*s1 && *s2)
+	{
+		if (*s1 != *s2)
+		{
+			return (0);
+		}
+		s1++;
+		s2++;
+	}
+
+	return (*s2 == '\0');
+}
 
 /**
  * _strstr - find the first occurrence of a substring.
@@ -30,20 +52,14 @@ unsigned int _strlen(char *str)
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int haystack_len = _strlen(haystack);
-	unsigned int needle_len = _strlen(needle);
-
-	for (i = 0; i < haystack_len; i++)
+	while (*haystack != '\0')
 	{
-		for (j = 0; j < needle_len; j++)
+		if ((*haystack == *needle) && (compare_strings(haystack, needle)))
 		{
-			if (haystack[i] == needle[j])
-			{
-				return (&haystack[i]);
-			}
+			return (needle);
 		}
+		haystack++;
 	}
+
 	return (NULL);
 }
