@@ -27,19 +27,19 @@ unsigned int _strlen(char *str)
  * Return: true
  */
 
-int compare_strings(char *s1, char *s2)
+int compare_strings(char *str1, char *str2)
 {
-	while (*s1 && *s2)
+	while (*str1 && *str2)
 	{
-		if (*s1 != *s2)
+		if (*str1 != *str2)
 		{
 			return (0);
 		}
-		s1++;
-		s2++;
+		str1++;
+		str2++;
 	}
 
-	return (*s2 == '\0');
+	return (*str2 == '\0');
 }
 
 /**
