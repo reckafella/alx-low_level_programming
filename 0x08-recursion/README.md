@@ -17,4 +17,7 @@
  - Prototype: int factorial(int n);
  - If n is lower than 0, the function should return -1 to indicate an error
  - Factorial of 0 is 1
+5. 4-pow_recursion.c -- a function that returns the value of x raised to the power of y.
 
+ - Prototype: int _pow_recursion(int x, int y);
+ - If y is lower than 0, the function should return -1
