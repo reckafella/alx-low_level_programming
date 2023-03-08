@@ -18,6 +18,11 @@
  - If n is lower than 0, the function should return -1 to indicate an error
  - Factorial of 0 is 1
 5. 4-pow_recursion.c -- a function that returns the value of x raised to the power of y.
-
+	
  - Prototype: int _pow_recursion(int x, int y);
  - If y is lower than 0, the function should return -1
+
+6. 5-sqrt_recursion -- a function that returns the natural square root of a number.
+
+ - Prototype: int _sqrt_recursion(int n);
+ - If n does not have a natural square root, the function should return -1
