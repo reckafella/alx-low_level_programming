@@ -8,20 +8,34 @@
 
 int _sqrt_recursion(int n)
 {
-	int sq = 1;
+	int guess = 1;
 
-	sq = (sq + (n / sq));
+	guess = (guess + n) / 2;
 
-	if (n == 1)
+	if (n < 0)
 	{
-		return (1);
-	}
-	if (sq * sq <= n && (sq + 1) * (sq + 1) > n)
-	{
-		return (sq);
+		return (-1);
 	}
 	else
 	{
-		return (_sqrt_recursion(n));
+		if (n == 0 || n == 1)
+		{
+			return (n);
+		}
+
+		if (guess * guess == n)
+		{
+			return (guess);
+		}
+		else if (guess * guess < n)
+		{
+			guess = guess + 1;
+			return (_sqrt_recursion(n));
+		}
+		else
+		{
+			guess = guess - 1;
+			return (_sqrt_recursion(n));
+		}
 	}
 }
