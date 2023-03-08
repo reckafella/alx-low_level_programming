@@ -6,18 +6,22 @@
  * Return: int
  */
 
-int _pow_recursion(int x, int y)
+int _sqrt_recursion(int n)
 {
-	if ( x % y != 0)
+	int sq = 1;
+
+	sq = (sq + ((n / sq) / 2));
+
+	if (n == 1)
 	{
-		return (-1);
+		return (1);
 	}
-	else if(x - (y*y) > 0)
+	if ( sq*sq <= n && (sq + 1) * (sq + 1) > n)
 	{
-		return (_pow_recursion(x, (y + 1)));
+		return (sq);
 	}
 	else
 	{
-		return (y);
+		return (_sqrt_recursion(n));
 	}
 }
