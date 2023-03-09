@@ -11,7 +11,7 @@ char puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		return (s);
 	}
 
 	_putchar(*s);
