@@ -34,7 +34,7 @@ void _print_rev_recursion(char *s)
 	}
 }
 /**
- * _strlen_recursive - recursively determine string length
+ * _strlen_recursion - recursively determine string length
  * @s: string input
  *
  * Return: int
