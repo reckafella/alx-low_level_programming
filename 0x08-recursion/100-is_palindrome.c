@@ -1,20 +1,38 @@
 #include "main.h"
 
 /**
- * _rev_recursion - reverse a string recursively
- * @s: string
+ * _puts_recursion - print a string followed by a new line.
+ * @s: string input
  *
- * Return: string
+ * Return: void
  */
 
-char _rev_recursion(char *s)
+void _puts_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		return;
+	}
+
+	_putchar(*s);
+	_puts_recursion(s + 1);
+}
+
+/**
+ * _print_rev_recursion - print a string in reverse using recursion
+ * @s: string input
+ *
+ * Return: void
+ */
+
+void _print_rev_recursion(char *s)
 {
 	if (*s)
 	{
-		return (_print_rev_recursion(s + 1));
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
 }
-
 /**
  * _strlen_recursive - recursively determine string length
  * @s: string input
@@ -50,9 +68,8 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		if (_rev_recursion(s) == (s))
+		if (_print_rev_recursion(s) == _puts_recursion(s))
 		{
-			is_palindrome(s + 1);
 			return (1);
 		}
 		else
