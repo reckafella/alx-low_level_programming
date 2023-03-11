@@ -16,7 +16,7 @@ int _atoi(char *s)
 		{
 			_putchar(*s);
 		}
-		
+
 	}
 	_putchar('\n');
 }

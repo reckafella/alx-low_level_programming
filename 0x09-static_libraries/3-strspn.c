@@ -14,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned  int j;
 	int sublen = 0;
 
-	for (i = 0; i < 10;i++)
+	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
