@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - print all arguments it receives
+ * main - print the sum of two arguments it receives
  * @argc: argument count;
  * @argv: argument vector
  *
@@ -12,19 +12,19 @@
 int main(int argc, char *argv[])
 {
 	int count;
-	int product = 1;
+	int sum = 0;
 
-	if (!(argc == 3))
+	if (argc <= 1)
 	{
-		printf("Error\n");
+		printf("%d\n", sum);
 	}
 	else
 	{
 		for (count = 1; count < argc; count++)
 		{
-			product *= _atoi(argv[count]);
+			sum += _atoi(argv[count]);
 		}
-		printf("%d\n", product);
+		printf("%d\n", sum);
 	}
 
 	return (0);
