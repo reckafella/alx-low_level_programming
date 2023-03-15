@@ -19,48 +19,32 @@ char *str_concat(char *s1, char *s2)
 	int len_s2 = 0;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 
 	while (s1[len_s1] != '\0')
-	{
 		++len_s1;
-	}
 
 	while (s2[len_s2] != '\0')
-	{
 		++len_s2;
-	}
 
 	ptr = malloc((len_s1 + len_s2 + 1) * sizeof(char));
 
 	if (!ptr)
-	{
 		return (NULL);
-	}
 
-	/*
-	 * first, we copy s1
-	 * then, s2
-	 */
-
-	while (s1[i] != '\0')
+	for (; s1[i] != '\0'; i++)
 	{
 		ptr[i] = s1[i];
-		i++;
 	}
 
-	while (s2[j] != '\0')
+	for (; s2[j] != '\0'; j++)
 	{
 		ptr[i + j] = s2[j];
-		j++;
 	}
+
 	ptr[i + j] = '\0';
 
 	return (ptr);
