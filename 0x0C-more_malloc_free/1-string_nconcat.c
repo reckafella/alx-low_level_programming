@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[len_s2] != '\0')
 		++len_s2;
 
-	ptr = malloc((len_s1 + len_s2 + 1) * sizeof(char));
+	ptr = malloc((len_s1 + len_s2 + 1));
 	if (!ptr)
 		return (NULL);
 
