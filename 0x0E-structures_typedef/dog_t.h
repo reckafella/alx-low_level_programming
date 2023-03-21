@@ -8,12 +8,21 @@
  * @owner: dog owner
  */
 
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
+};
+
+/**
+ * struct dog_t - new structure using typedef
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
+ */
+
+typedef struct dog dog_t;
 
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
