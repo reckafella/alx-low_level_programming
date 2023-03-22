@@ -12,7 +12,10 @@
 void print_name(char *name, void (*f)(char *))
 {
 	if (!(*name))
-		exit(0);
-	else
-		(*f)(name);
+		exit(98);
+
+	if (!(f))
+		exit(98);
+
+	(*f)(name);
 }
