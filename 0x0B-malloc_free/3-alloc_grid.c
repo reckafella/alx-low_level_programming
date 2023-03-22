@@ -40,10 +40,13 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	/* Deallocate memory */
-	for (i = 0; i < height; i++)
-		free(arr[i]);
-	free(arr);
+	/* Deallocate memory if malloc fails */
+	if (!arr)
+	{
+		for (i = 0; i < height; i++)
+			free(arr[i]);
+		free(arr);
+	}
 
 	return (arr);
 }
