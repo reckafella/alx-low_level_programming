@@ -12,6 +12,10 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node = NULL;
 	list_t *last_node = NULL;
+	unsigned int length = 0;
+
+	while (str[length] != '\0')
+		length++;
 
 	/* Allocate space for the new node */
 	new_node = malloc(sizeof(list_t *));
@@ -22,6 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	/* duplicate string *str to the new node */
 	new_node->str = strdup(str);
+	new_node->len = length;
 	new_node->next = NULL;
 
 	/* make new_node head */
