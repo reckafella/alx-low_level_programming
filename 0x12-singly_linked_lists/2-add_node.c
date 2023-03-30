@@ -10,8 +10,10 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	/* Allocate space for the new node */
-	list_t *new_node = malloc(sizeof(list_t));
+	list_t *new_node = NULL;
+
+	/* Allocate memory space for the new node */
+	new_node = malloc(sizeof(list_t));
 
 	/* return null if malloc fails */
 	if (!(new_node))
@@ -21,8 +23,8 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->str = strdup(str);
 
 	/* make new_node head */
-	new_node->next = (*head);
-	(*head) = new_node;
+	new_node->next = *head;
+	*head = new_node;
 
-	return (new_node);
+	return (*head);
 }
