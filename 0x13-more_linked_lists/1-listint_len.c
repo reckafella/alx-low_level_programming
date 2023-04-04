@@ -11,11 +11,8 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int count;
-	const listint_t *ptr = NULL;
-
-	count = 0;
-	ptr = h;
+	size_t count = 0;
+	const listint_t *ptr = h;
 
 	if (ptr == NULL)
 		return (0);
