@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct listint_s;
 /**
  * struct listint_s - singly linked list
  * @n: integer
