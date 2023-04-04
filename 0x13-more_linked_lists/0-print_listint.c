@@ -12,7 +12,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	size_t count;
+	int count;
 	const listint_t *ptr = h;
 
 	count = 0;
