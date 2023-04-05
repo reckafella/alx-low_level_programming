@@ -20,7 +20,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 
 	/* add the value of n in the newly formed node */
-        new_node->n = n;
+	new_node->n = n;
 
 	/* Deallocate memory if above step fails */
 	if (!(new_node->n))
