@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -23,7 +24,15 @@ int main(int argc, char *argv[])
 	{
 		for (count = 1; count < argc; count++)
 		{
-			sum += _atoi(argv[count]);
+			if (isdigit(_atoi(argv[count])))
+			{
+				sum += _atoi(argv[count]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		printf("%d\n", sum);
 	}
@@ -53,6 +62,10 @@ int _atoi(char *s)
 
 	while (s[i] && (s[i] >= '0' && s[i] <= '9'))
 	{
+		if (s[i] < 48 || s[i] > 57)
+		{
+			
+		}
 		number  = (number * 10) + (s[i] - '0');
 		i++;
 	}
