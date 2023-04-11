@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 }
 
 /**
- * _strlen_recursion - return the length of a string
+ * _strlen - return the length of a string
  * @s: string input
  *
  * Return: string length (int)
