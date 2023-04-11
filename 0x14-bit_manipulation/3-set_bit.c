@@ -10,9 +10,17 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	int bit_value;
+	unsigned long int *ptr = n;
+
+	if (n == NULL)
+		return (-1);
+
 	if (index >= (sizeof(unsigned long int) * CHAR_BIT))
 		return (-1);
 
-	return (*n | (*n << index));
+	if ((*ptr >> index) != 1)
+		bit_value = (*n | (*n << index));
+	return (bit_value);
 	/*return ((1 << (index)) | *n);*/
 }
