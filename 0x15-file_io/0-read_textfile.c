@@ -11,26 +11,28 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fd;
-	char c;
-	size_t printed_chars = 0;
+	ssize_t bytes_read = 0;
+	ssize_t bytes_printed = 0;
+	ssize_t printed_chars = 0;
 
 	if (filename == NULL)
 		return (0);
 
-	fd = fopen(filename, "r");
+	fd = fopen(filename, O_RDONLY);
 
 	if (!fd)
 		return (0);
 
 	/* Read and print the contents of the file */
-	while ((c = fgetc(fd)) != EOF)
+	bytes_read = fgetc(fd);
+	while (bytes_read != EOF)
 	{
-		printed_chars++;
-		write(1, &c, STDOUT_FILENO);
-		if (c == -1)
+		bytes_printed =  write(1, &bytes_read, STDOUT_FILENO);
+		if (bytes_printed == -1)
 		{
 			return (0);
 		}
+		printed_chars++;
 	}
 
 	(void) letters;
