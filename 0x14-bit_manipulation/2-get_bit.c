@@ -7,7 +7,6 @@
  *
  * Return: value of a bit set at a given index
  */
-
 int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index >= (sizeof(unsigned long int) * CHAR_BIT))
