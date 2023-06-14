@@ -11,7 +11,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *table = NULL;
 	unsigned long int i;
 
-	/* Allocate memory on the heap using malloc. Return NULL if malloc fails. */
+	/* Allocate memory on the heap. Return NULL if malloc fails. */
 	table = malloc(sizeof(hash_table_t));
 	if (!table)
 		return (NULL);
