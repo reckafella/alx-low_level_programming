@@ -1,0 +1,12 @@
+CC = gcc
+SRC := $(wildcard *.c)
+OBJ := $(SRC:%.c=%)
+
+all:
+	$(OBJ)
+
+%: %.o
+	$(CC) $< -o $@
+
+%.o: %.c
+	$(CC) -c $<
