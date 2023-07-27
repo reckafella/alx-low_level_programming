@@ -8,3 +8,5 @@ int main(void)
 	char *girl = "Katherine Kabura";
 	printf("Best school: %s\n", girl);
 }
+/* School */
+/* School */
