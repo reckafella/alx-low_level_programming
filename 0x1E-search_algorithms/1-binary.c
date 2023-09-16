@@ -34,6 +34,9 @@ int binary_search_recursive(int *array, size_t left, size_t right, int value)
 	if (left > right)
 		return (-1);
 
+	if (array == NULL)
+		return (-1);
+
 	printf("Searching in array: ");
 	for (i = left; i <= right; i++)
 	{
